@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_collapseMode="pin"
+        android:background="@color/colorPrimary"
+        android:title="@string/action_settings"
+        app:title="SUPER MAN"
+        app:titleTextColor="@color/colorPrimary1"
+        app:subtitle="COMICS LIST"
+        app:subtitleTextAppearance="@style/AppTheme"
+        app:subtitleTextColor="@color/colorPrimary1"
+         />
+
+<android.support.v7.widget.RecyclerView
+    android:layout_below="@+id/toolbar"
+
+    android:id="@+id/comiclist_recycler_view"
+    android:scrollbars="vertical"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark1"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:src="@drawable/googlelogo"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_alignRight="@+id/toolbar"
+        android:layout_marginEnd="44dp" />
+
+    </RelativeLayout>
